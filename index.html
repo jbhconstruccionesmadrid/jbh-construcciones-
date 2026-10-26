@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17212b">
+  <meta name="description" content="JBH Construcciones: reformas, pladur, pintura, baños, alicatados, fontanería y electricidad en Madrid y alrededores. Solicita tu presupuesto por WhatsApp.">
+  <title>JBH Construcciones | Reformas en Madrid</title>
+  <style>
+    :root{--ink:#17212b;--ink2:#243341;--gold:#e7b85d;--paper:#f6f5f1;--muted:#65717c;--white:#fff;--line:#e4e6e7}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6}
+    a{color:inherit}
+    .wrap{width:min(1120px,92%);margin:auto}
+    .topbar{background:var(--ink);color:#fff;font-size:.9rem;padding:9px 0}
+    .topbar .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    header{background:#fff;position:sticky;top:0;z-index:5;border-bottom:1px solid var(--line)}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:15px 0}
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:900;letter-spacing:.04em}
+    .logo-img{width:62px;height:52px;object-fit:contain;display:block}.brand-name{display:block}
+    .brand small{display:block;font-weight:600;letter-spacing:.12em;color:var(--muted);font-size:.66rem}
+    nav{display:flex;gap:22px;align-items:center}
+    nav a{text-decoration:none;font-weight:700;font-size:.92rem}
+    nav a:hover{color:#9b6c13}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;background:var(--gold);color:#1c2227;text-decoration:none;padding:13px 19px;border-radius:8px;font-weight:800;border:0;transition:transform .15s,filter .15s}
+    .btn:hover{filter:brightness(.96);transform:translateY(-1px)}
+    .btn.dark{background:var(--ink);color:#fff}
+    .hero{background:linear-gradient(115deg,rgba(17,27,36,.97),rgba(26,42,54,.88)),radial-gradient(circle at 80% 20%,#687681,transparent 35%);color:#fff;padding:82px 0 74px;overflow:hidden}
+    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:center}
+    .eyebrow{color:var(--gold);font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;font-weight:900}
+    h1{font-size:clamp(2.45rem,5.5vw,4.7rem);line-height:1.04;letter-spacing:-.045em;margin:14px 0 20px;max-width:760px}
+    .hero p{font-size:1.12rem;color:#e1e7eb;max-width:650px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .outline{border:1px solid #aeb9c1;color:#fff;text-decoration:none;border-radius:8px;padding:12px 18px;font-weight:800}
+    .hero-card{border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.07);padding:28px;border-radius:18px;backdrop-filter:blur(4px)}
+    .hero-card .big{font-size:3.1rem}
+    .hero-card h2{font-size:1.4rem;margin:4px 0 8px}
+    .hero-card p{font-size:.98rem;margin:0;color:#d9e0e5}
+    .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+    .chip{border:1px solid rgba(255,255,255,.25);padding:7px 10px;border-radius:99px;font-size:.84rem}
+    section{padding:72px 0}
+    .section-head{max-width:700px;margin-bottom:30px}
+    .section-head h2{font-size:clamp(1.9rem,4vw,2.8rem);line-height:1.12;margin:9px 0 12px;letter-spacing:-.03em}
+    .section-head p{color:var(--muted);margin:0}
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .service{background:#fff;border:1px solid var(--line);border-radius:14px;padding:23px}
+    .service .ico{font-size:1.8rem;background:#fff4dc;width:54px;height:54px;display:grid;place-items:center;border-radius:12px}
+    .service h3{margin:14px 0 6px;font-size:1.13rem}
+    .service p{margin:0;color:var(--muted);font-size:.95rem}
+    .dark-band{background:var(--ink);color:#fff}
+    .dark-band .section-head p{color:#c5cdd3}
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .project{min-height:225px;border-radius:14px;overflow:hidden;position:relative;display:flex;align-items:end;padding:20px;background:linear-gradient(145deg,#495964,#202d37)}
+    .project:nth-child(2){background:linear-gradient(145deg,#9a9b93,#343f46)}
+    .project:nth-child(3){background:linear-gradient(145deg,#9b7f60,#303840)}
+    .project:nth-child(4){background:linear-gradient(145deg,#737c80,#27333c)}
+    .project:nth-child(5){background:linear-gradient(145deg,#b6a58d,#39454d)}
+    .project:nth-child(6){background:linear-gradient(145deg,#67756f,#202d37)}
+    .project:before{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.75),transparent 70%)} .photo-project{background:#26313a} .photo-project img{position:absolute;width:100%;height:100%;object-fit:cover;inset:0} .photo-project:before{z-index:1} .photo-project div{z-index:2}
+    .project div{position:relative;color:white}
+    .project h3{margin:0 0 4px}
+    .project p{margin:0;color:#e3e6e8;font-size:.9rem}
+    .notice{font-size:.88rem;color:#c5cdd3;margin-top:17px}
+    .why-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+    .checklist{display:grid;gap:15px}
+    .check{display:flex;gap:12px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px}
+    .check b{display:block}
+    .tick{color:#8b651a;font-weight:900;font-size:1.2rem}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+    .contact-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:28px}
+    .contact-card h3{font-size:1.35rem;margin:0 0 8px}
+    .contact-card p{color:var(--muted)}
+    .contact-link{display:flex;align-items:center;gap:12px;text-decoration:none;padding:13px 0;border-bottom:1px solid var(--line);font-weight:700}
+    .contact-link:last-child{border-bottom:0}
+    .contact-link span{font-size:1.3rem}
+    .form{display:grid;gap:12px;margin-top:16px}
+    input,textarea,select{width:100%;padding:13px 14px;border:1px solid #cbd0d3;border-radius:8px;font:inherit;background:#fff}
+    textarea{min-height:110px;resize:vertical}
+    .form-note{font-size:.82rem;color:var(--muted)}
+    footer{background:#101820;color:#cbd3d8;padding:26px 0;font-size:.9rem}
+    footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    .float-wa{position:fixed;right:18px;bottom:18px;z-index:8;background:#168b51;color:white;text-decoration:none;padding:14px 17px;border-radius:99px;box-shadow:0 8px 25px #0003;font-weight:800}
+    @media(max-width:800px){nav{display:none}.hero{padding:58px 0}.hero-grid,.why-grid,.contact-grid{grid-template-columns:1fr}.hero-card{max-width:520px}.services{grid-template-columns:repeat(2,1fr)}.gallery{grid-template-columns:repeat(2,1fr)}section{padding:55px 0}}
+    @media(max-width:520px){.services,.gallery{grid-template-columns:1fr}.project{min-height:185px}.topbar .wrap{font-size:.78rem}.hero-grid{gap:28px}.hero-card{padding:22px}.float-wa{right:12px;bottom:12px;padding:12px 14px}}
+  </style>
+</head>
+<body>
+  <div class="topbar"><div class="wrap"><span>Reformas y construcción en Madrid y alrededores</span><span>☎ <a href="tel:+34612441949" style="color:inherit">+34 612 44 19 49</a></span></div></div>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#inicio" aria-label="JBH Construcciones, inicio"><img class="logo-img" src="assets/logo-jbh.png" alt="Logo JBH Construcciones"><span class="brand-name">JBH CONSTRUCCIONES<small>REFORMAS Y CONSTRUCCIÓN</small></span></a>
+      <nav aria-label="Navegación principal"><a href="#servicios">Servicios</a><a href="#trabajos">Trabajos</a><a href="#nosotros">Nosotros</a><a href="#contacto">Contacto</a></nav>
+      <a class="btn" href="https://wa.me/34612441949?text=Hola%2C%20quiero%20solicitar%20un%20presupuesto%20para%20una%20reforma." target="_blank" rel="noopener">Pedir presupuesto</a>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="inicio">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">Tu proyecto, bien hecho</div>
+          <h1>Reformas que transforman tu espacio.</h1>
+          <p>En JBH Construcciones te ayudamos a renovar tu vivienda o local con trabajos de reforma, acabados cuidados y atención directa durante el proyecto.</p>
+          <div class="actions">
+            <a class="btn" href="https://wa.me/34612441949?text=Hola%2C%20quiero%20solicitar%20un%20presupuesto%20para%20una%20reforma." target="_blank" rel="noopener">✆ Solicitar presupuesto</a>
+            <a class="outline" href="#servicios">Ver servicios</a>
+          </div>
+          <div class="chips"><span class="chip">Reformas integrales</span><span class="chip">Baños</span><span class="chip">Pladur y pintura</span></div>
+        </div>
+        <div class="hero-card">
+          <div class="big">⌂</div>
+          <h2>¿Tienes una reforma en mente?</h2>
+          <p>Cuéntanos qué necesitas. Contacta directamente y hablamos de tu proyecto y de los próximos pasos.</p>
+          <div style="margin-top:20px"><a href="#contacto" class="btn">Hablemos de tu reforma →</a></div>
+        </div>
+      </div>
+    </section>
+    <section id="servicios">
+      <div class="wrap">
+        <div class="section-head"><div class="eyebrow">Qué hacemos</div><h2>Soluciones para tu reforma</h2><p>Servicios de construcción y renovación para mejorar tu vivienda o local. Consulta tu proyecto y valoramos el trabajo que necesitas.</p></div>
+        <div class="services">
+          <article class="service"><div class="ico">🏠</div><h3>Reformas integrales</h3><p>Renovación de espacios y coordinación de los distintos trabajos de reforma.</p></article>
+          <article class="service"><div class="ico">🚿</div><h3>Reformas de baños</h3><p>Renovación de baños, revestimientos y acabados para aprovechar mejor el espacio.</p></article>
+          <article class="service"><div class="ico">🧱</div><h3>Pladur y tabiquería</h3><p>Instalación de pladur y soluciones para distribuir o renovar interiores.</p></article>
+          <article class="service"><div class="ico">🖌️</div><h3>Pintura</h3><p>Pintura interior y renovación de paredes y techos.</p></article>
+          <article class="service"><div class="ico">🔧</div><h3>Fontanería y electricidad</h3><p>Trabajos de instalación y renovación según las características de cada proyecto.</p></article>
+          <article class="service"><div class="ico">◫</div><h3>Alicatados y acabados</h3><p>Colocación de revestimientos y remates para un acabado cuidado.</p></article>
+        </div>
+      </div>
+    </section>
+    <section class="dark-band" id="trabajos">
+      <div class="wrap">
+        <div class="section-head"><div class="eyebrow">Galería de proyectos</div><h2>Trabajos que hablan por sí mismos</h2><p>Esta sección está preparada para añadir fotografías reales de los trabajos realizados por JBH Construcciones.</p></div>
+        <div class="gallery">
+          <article class="project photo-project"><img src="assets/reforma-bano.jpg" alt="Baño reformado con mampara, ducha y mueble de lavabo" loading="lazy"><div><h3>Reforma de baño</h3><p>Trabajo realizado por JBH Construcciones</p></div></article>
+          <article class="project photo-project"><img src="assets/armario-empotrado.jpg" alt="Armario empotrado de madera instalado" loading="lazy"><div><h3>Armario empotrado</h3><p>Instalación y acabado interior</p></div></article>
+          <article class="project"><div><h3>Pladur y pintura</h3><p>Próximamente, más trabajos reales.</p></div></article>
+        </div>
+        <p class="notice">Las fotografías mostradas corresponden a trabajos compartidos por JBH Construcciones. Se pueden añadir más imágenes cuando quieras.</p>
+      </div>
+    </section>
+    <section id="nosotros">
+      <div class="wrap why-grid">
+        <div class="section-head"><div class="eyebrow">JBH Construcciones</div><h2>Trato directo y atención a cada detalle</h2><p>Trabajamos para ayudarte a convertir tus ideas en un espacio renovado. Cuéntanos el tipo de reforma, la ubicación y qué te gustaría hacer.</p><p>Atendemos solicitudes en Madrid y alrededores. La disponibilidad y el alcance de cada trabajo se confirman al consultar el proyecto.</p><a class="btn dark" href="https://wa.me/34612441949?text=Hola%2C%20quiero%20consultar%20una%20reforma." target="_blank" rel="noopener">Consultar por WhatsApp</a></div>
+        <div class="checklist">
+          <div class="check"><span class="tick">✓</span><div><b>Contacto directo</b><span>Habla con nosotros para explicar tu idea y resolver dudas.</span></div></div>
+          <div class="check"><span class="tick">✓</span><div><b>Servicios variados</b><span>Consulta trabajos de reforma, pintura, pladur y acabados.</span></div></div>
+          <div class="check"><span class="tick">✓</span><div><b>Presupuesto según tu proyecto</b><span>Valoramos el trabajo a realizar y los detalles de cada caso.</span></div></div>
+        </div>
+      </div>
+    </section>
+    <section id="contacto" style="background:#eeefec">
+      <div class="wrap">
+        <div class="section-head"><div class="eyebrow">Contacto</div><h2>Cuéntanos qué quieres reformar</h2><p>Escríbenos por WhatsApp o prepara tu consulta con el formulario. El formulario abrirá WhatsApp con los datos escritos para que puedas enviarlos.</p></div>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>Contacta con JBH</h3>
+            <p>Cuéntanos qué necesitas y dónde se encuentra el proyecto.</p>
+            <a class="contact-link" href="https://wa.me/34612441949?text=Hola%2C%20quiero%20solicitar%20un%20presupuesto." target="_blank" rel="noopener"><span>💬</span><div>WhatsApp<small style="display:block;color:#65717c;font-weight:400">+34 612 44 19 49</small></div></a>
+            <a class="contact-link" href="tel:+34612441949"><span>☎</span><div>Llámanos<small style="display:block;color:#65717c;font-weight:400">+34 612 44 19 49</small></div></a>
+            <div class="contact-link"><span>📍</span><div>Zona de trabajo<small style="display:block;color:#65717c;font-weight:400">Madrid y alrededores</small></div></div>
+          </div>
+          <div class="contact-card">
+            <h3>Solicita información</h3>
+            <form class="form" id="quoteForm">
+              <label>Tu nombre<input id="name" name="name" autocomplete="name" placeholder="Nombre" required></label>
+              <label>Tipo de trabajo<select id="job" name="job"><option>Reforma integral</option><option>Baño</option><option>Pladur</option><option>Pintura</option><option>Fontanería</option><option>Electricidad</option><option>Alicatados</option><option>Otro trabajo</option></select></label>
+              <label>¿Dónde es la reforma?<input id="place" name="place" placeholder="Municipio o zona" required></label>
+              <label>Cuéntanos un poco más<textarea id="details" name="details" placeholder="Describe brevemente lo que necesitas"></textarea></label>
+              <button class="btn" type="submit" style="cursor:pointer">Enviar consulta por WhatsApp</button>
+              <p class="form-note">Al pulsar, se abrirá WhatsApp con el mensaje preparado. No se almacenan datos en esta página.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap"><span>© <span id="year"></span> JBH Construcciones</span><span>Reformas en Madrid y alrededores</span></div></footer>
+  <a class="float-wa" href="https://wa.me/34612441949?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20una%20reforma." target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">☏ WhatsApp</a>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('quoteForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const job = document.getElementById('job').value;
+      const place = document.getElementById('place').value.trim();
+      const details = document.getElementById('details').value.trim();
+      const message = `Hola, soy ${name}. Quiero consultar un presupuesto para: ${job}. Zona: ${place}. Detalles: ${details || 'No añadidos'}.`;
+      window.open('https://wa.me/34612441949?text=' + encodeURIComponent(message), '_blank', 'noopener');
+    });
+  </script>
+</body>
+</html>

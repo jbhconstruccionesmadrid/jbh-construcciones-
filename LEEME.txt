@@ -1,0 +1,20 @@
+JBH CONSTRUCCIONES — WEB LISTA PARA PUBLICAR
+
+Incluye:
+- index.html (página web)
+- assets/logo-jbh.png (logo)
+- assets/armario-empotrado.jpg (foto real compartida)
+- assets/reforma-bano.jpg (foto real compartida)
+
+PUBLICAR GRATIS CON GITHUB PAGES
+1. Inicia sesión o crea una cuenta en https://github.com/
+2. Crea un repositorio público llamado jbh-construcciones.
+3. Sube TODO el contenido de esta carpeta, respetando las carpetas: index.html y assets/.
+4. En el repositorio, abre Settings → Pages.
+5. En Build and deployment elige Deploy from a branch; selecciona main y /(root), y guarda.
+6. Espera unos minutos. GitHub mostrará la dirección pública de la página.
+7. Abre la dirección desde el móvil y prueba los botones de WhatsApp y llamada.
+
+El número de WhatsApp y teléfono ya está configurado: +34 612 44 19 49.
+El formulario prepara el mensaje y lo abre en WhatsApp; no guarda datos en el sitio.
+No se han inventado dirección física, correo ni reseñas.
